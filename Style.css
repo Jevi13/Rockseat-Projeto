@@ -1,171 +1,154 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    /*
+body {
+  /*
     background-image: url(./assets/bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
  */
-    /*Background ordem: Cor imagem repeticao posição "/" barra necessaria para usar o preenchimento(Cover) */
-    background: var(--bg-url) no-repeat top center/cover;
-
+  /*Background ordem: Cor imagem repeticao posição "/" barra necessaria para usar o preenchimento(Cover) */
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
-:root{
-    --text-color :white;
-    --bg-url: url(./assets/bg-mobile.jpg);
-    --stroke-color:rgba(255, 255, 255, 0.5);
-    --surface-color:rgba(255, 255, 255, 0.05);
-    --surface-color-hover: rgba(0, 0, 0, 0.02);
-    --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bg-url: url(./assets/moon-star.svg);
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-star.svg);
 }
 
-.light{
-    --text-color :black;
-    --bg-url: url(./assets/bg-mobile-light.png);
-    --stroke-color: rgba(0, 0, 0, 0.5);
-    --surface-color: rgba(0, 0, 0, 0.05);
-    --surface-color-hover: rgba(0, 0, 0, 0.02);
-    --highlight-color-hover: rgba(0, 0, 0, 0.1);
-    --switch-bg-url: url(./assets/sun.svg);
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.png);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color-hover: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
-
-
-
-
-body *{
-    font-family: inter;
-    color: var(--text-color);
+body * {
+  font-family: inter;
+  color: var(--text-color);
 }
 
-#container_principal{
-    width: 364px;
-    display: block;
-    border: 1px solid red;
-    margin: 56px auto 0px;
-    
-
+#container_principal {
+  width: 100%;
+  max-width: 588px;
+  display: block;
+  border: 1px solid red;
+  margin: 56px auto 0px;
 }
-#profile{
-    padding: 24px;
-}
-
-#profile img{
-
-    display: block;
-    width: 122px;
-    margin: auto;
+#profile {
+  padding: 24px;
 }
 
-#profile a{
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    
-    display: block;
+#profile img {
+  display: block;
+  width: 122px;
+  margin: auto;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    margin-top: 30px;
-    padding: 24px 0;
+#profile a {
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+
+  display: block;
 }
 
-ul li a{
-
-
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    padding: 16px 24px;
-    text-decoration: none;
-    font-weight: 500px;
-    transition: background 0.4s;
-   
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 24px 0;
 }
 
-ul li a:hover{
+ul li a {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  padding: 16px 24px;
+  text-decoration: none;
+  font-weight: 500px;
+  transition: background 0.4s;
+}
 
-    background: var(--surface-color-hover);
-    border: 1px solid var(--text-color);
-
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1px solid var(--text-color);
 }
 
 /*Social Links*/
 
-#social_links{
+#social_links {
+  display: flex;
 
-    display: flex;
-    
-
-    justify-content: center;
-    padding: 24px 0;
-    font-size: 24px;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
 }
 
-#social_links a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s;
-    border-radius: 50px;
-    padding: 16px;
+#social_links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  border-radius: 50px;
+  padding: 16px;
 }
 
-#social_links a:hover{
-    background: rgba(255, 255, 255, 0.2);
-    padding: 16px;
+#social_links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 16px;
 }
 
-footer{
-    padding:24px 0;
-    text-align: center;
+footer {
+  padding: 24px 0;
+  text-align: center;
 }
 
-#switch{
-    
-    margin: 30px auto;
-    position: relative;
-    width: 64px;
+#switch {
+  margin: 30px auto;
+  position: relative;
+  width: 64px;
 }
 
-#switch button{
-    width: 32px;
-    height: 32px;
-    border-radius: 50px;
-    border: 0;
-    background: white var(--switch-bg-url) no-repeat center;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-
+#switch button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  border: 0;
+  background: white var(--switch-bg-url) no-repeat center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
-.light #switch button{
-    right: 0;
-    left: initial;
+.light #switch button {
+  right: 0;
+  left: initial;
 }
 
-#switch span{
-    display: block;
-    width: 64px;
-    height: 24px;
-    background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
-    --webkit-backdrop-filter: blur(4px);
-    border-radius: 9999px;
-
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  --webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
